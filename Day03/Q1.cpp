@@ -16,6 +16,8 @@ bool find_duplicates(int array[],int size){
     return false;
 }
 
+//we can use stl containers to optimize time complexity
+
 int main(){
     int size;
     cin>>size;

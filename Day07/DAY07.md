@@ -16,5 +16,7 @@
     
     Q5 : Median of 2 sorted arrays of equal size 
 
+    Q6 : Median of 2 sorted arrays of different
+         size 
 
 ```

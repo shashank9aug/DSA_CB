@@ -1,42 +1,47 @@
-// Write a function that reverses a string. The input string is given as an array
-// of characters s.
+//This question is very similar to max_area_histogram problem : 
 
-// Input: s = ["h","e","l","l","o"]
-// Output: ["o","l","l","e","h"]
+//  2D-implementation of max_area_histogram problem : 
+
+// Input:
+// n = 4, m = 4
+// M[][] = {{0 1 1 0},
+//          {1 1 1 1},
+//          {1 1 1 1},
+//          {1 1 0 0}}
+// Output: 8
+// Explanation: For the above test case the
+// matrix will look like
+// 0 1 1 0
+// 1 1 1 1
+// 1 1 1 1
+// 1 1 0 0
+// the max size rectangle is 
+// 1 1 1 1
+// 1 1 1 1
+// and area is 4 *2 = 8.
+
 
 #include<iostream>
-#include<vector>
-#include<algorithm>
 using namespace std;
 
-void reverse_string(vector<char>&str){
-    int start=0;
-    int end=str.size()-1;
-
-    while(start<end){
-        // swap(str[start],str[end]);
-        char temp = str[start];
-        str[start]=str[end];
-        str[end]=temp;
-        start++;
-        temp--;    
-    }
+int max_area_rectangle(int array[][100],int n,int m){
+    
 }
 
 int main(){
-   vector<char>str;
-    for(int idx=0;idx<5;idx++){
-        int input;
-        str.push_back(input);
-        cin>>input;
-    }
-    reverse_string(str);
+    int n,m;
+    cout<<"Size of array : ";
+    cin>>n>>m;
 
-    cout<<"Reversed String : ";
-    
-    for(int idx=0;idx<str.size();idx++){
-        cout<<str[idx]<<",";
+    int array[100][100]={0};
+    cout<<"Enter the array items : ";
+    for(int idx=0;idx<n;idx++){
+        for(int jdx=0;jdx<m;jdx++){
+        cin>>array[idx][jdx];
+        }
     }
+
+    cout<<"Maximum area of histogram : "<<max_area_rectangle(array,n,m)<<endl;
 
     return 0;
 }

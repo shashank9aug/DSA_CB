@@ -1,13 +1,15 @@
-# **DAY-09**
+# **DAY09**
+
 ```
-    Q1 : Reverse a String
-
-    Q2 : Check whether a String is Palindrome or not
-    Q3 : Find Duplicate characters in a string
-
-    Q4 : Why strings are immutable in Java?
+    Q1 : Maximum size rectangle (V.V.V.I.I.I.I)
     
-    Q5 : Write a Code to check whether one string
-         is a rotation of another
+    Q2 : Find a specific pair in matrix
+    
+    Q3 : Rotate matrix by 90 degrees
+    
+    Q4 : Kth smallest element in a row-cpumn wise
+         sorted matrix
+    
+    Q5 : Common elements in all rows of a given matrix
 
 ```

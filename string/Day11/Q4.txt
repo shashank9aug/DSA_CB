@@ -1,0 +1,18 @@
+
+
+Why strings are immutable in java ??
+
+> Immutable : it guarrenteed that strings own value won't change
+
+Stings are immutable because of following reason : 
+  1> Security : all the parameters used in db url or routing and in username/password 
+                will be changed if strings were mutable these parameters can be changed
+                which will result into biggest loss.
+
+  2> Class Loading : strings were used as arguments for class loading. if it being mutable
+                     then it will result into wrong class loading.
+                     (because mutable object can change their state).
+
+  3>synchronization :
+
+  4> Caching :                                    

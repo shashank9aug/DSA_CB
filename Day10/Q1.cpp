@@ -18,12 +18,12 @@ using namespace std;
 class Solution
 {
     public:
-    vector<long long> nextLargerElement(vector<long long> arr, long long n){
+    vector<int > nextLargerElement(vector<int > arr, int  n){
         // Your code here
-        vector<long long>v;
-        stack<long long>st;
+        vector<int >v;
+        stack<int >st;
         
-        for(long long i=n-1;i>=0;i--){
+        for(int  i=n-1;i>=0;i--){
             if(st.size()==0){
                 v.push_back(-1);
             }
@@ -53,19 +53,22 @@ class Solution
 int main()
 {
     int t;
+    cout<<"Enter the no of test case : ";
     cin>>t;
     while(t--)
     {
         
         int n;
+        cout<<"Enter the size of array: ";
         cin>>n;
-        vector<long long> arr(n);
+        vector<int > arr(n);
+        cout<<"Enter the array elements : ";
         for(int i=0;i<n;i++)
             cin>>arr[i];
         
         Solution obj;
-        vector <long long> res = obj.nextLargerElement(arr, n);
-        for (long long i : res) cout << i << " ";
+        vector <int > res = obj.nextLargerElement(arr, n);
+        for (int  i : res) cout << i << " ";
         cout<<endl;
     }
 	return 0;

@@ -1,10 +1,12 @@
 # **DAY-10**
+ 
+ Part of Aditya verma youtube playlist:
 
 >Question on single concept.
 ```txt
-    Q1 : Nearest Greater  to left.
+    Q1 : Nearest Greater  to right.
 
-    Q2 : Nearest Greater to right.
+    Q2 : Nearest Greater to left.
 
     Q3 : Nearest smaller to left.
 

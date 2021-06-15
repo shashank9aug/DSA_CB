@@ -6,6 +6,8 @@
 #include<algorithm>
 using namespace std;
 
+//their is some error in logic
+
 vector<int> NGL(int array[],int size){
     vector<int>v;
     stack<pair<int,int>>st;
@@ -89,26 +91,26 @@ int main(){
     int max_area=INT32_MIN;
 
     vector<int>left=NGL(array,size);
-    // vector<int>right=NGR(array,size);
+    vector<int>right=NGR(array,size);
 
-    // vector<int>width;
+    vector<int>width;
 
-    // for(int idx=0;idx<size;idx++){
-    //     width[idx]=(right[idx]-left[idx]-1);
-    // }
+    for(int idx=0;idx<size;idx++){
+        width[idx]=(right[idx]-left[idx]-1);
+    }
 
-    // vector<int>area;
+    vector<int>area;
 
-    // for(int idx=0;idx<size;idx++){
-    //     area[idx]=width[idx]*array[idx];
-    // }
+    for(int idx=0;idx<size;idx++){
+        area[idx]=width[idx]*array[idx];
+    }
 
-    // //Max area
-    // for(int idx=0;idx<size;idx++){
-    //     max_area=max(max_area,area[idx]);
-    // }    
+    //Max area
+    for(int idx=0;idx<size;idx++){
+        max_area=max(max_area,area[idx]);
+    }    
 
-    // cout<<"Maximum area of histogram : "<<max_area<<endl;
+    cout<<"Maximum area of histogram : "<<max_area<<endl;
 
     for(int idx=0;idx<size;idx++){
         cout<<left[idx]<<",";

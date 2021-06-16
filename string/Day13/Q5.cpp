@@ -1,21 +1,23 @@
-// { Driver Code Starts
+//paranthesis checker
+
+//Basically stack problem 
+
+//Question uses : {} or [] or ()
+
+//only push 
+
 #include<bits/stdc++.h>
 using namespace std;
-
-
- // } Driver Code Ends
-
-
 
 class Solution
 {
     public:
     //Function to check if brackets are balanced or not.
-    stack<char>st;
-    bool ispar(string )
+    stack<char>s;
+    bool ispar(string x)
     {
         // Your code here
-        if(s.size()%2!=0){
+        if(x.size()%2!=0){
             return false;
         }
         else{
@@ -23,31 +25,29 @@ class Solution
             {
                 if(i == '(')
                     s.push(')');
-            else if(i == '{')
-                 s.push('}');
-            else if(i == '[')
-                 s.push(']');
-            else if( s.empty() || s.top() != i)
-                 return false;
-            else if(s.top() == i)
-                 s.pop();
-            
+                else if(i == '{')
+                    s.push('}');
+                else if(i == '[')
+                    s.push(']');
+                else if( s.empty() || s.top() != i)
+                    return false;
+                else if(s.top() == i)
+                    s.pop();
             }
         }
         return s.empty();
     }
-
 };
-
-// { Driver Code Starts.
 
 int main()
 {
    int t;
    string a;
+   cout<<"Enter the number of test cases : "; 
    cin>>t;
    while(t--)
    {
+       cout<<"Enter the input parantheses string : ";
        cin>>a;
        Solution obj;
        if(obj.ispar(a))
@@ -55,4 +55,4 @@ int main()
        else
         cout<<"not balanced"<<endl;
    }
-}  // } Driver Code Ends
+}  

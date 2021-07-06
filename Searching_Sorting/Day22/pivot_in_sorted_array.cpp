@@ -1,3 +1,8 @@
+
+#include<iostream>
+#include<algorithm>
+using namespace std;
+
 // A Divide-and-Conquer approach to find the pivot (highest) element in
 // a sorted rotated array - returns the index of the pivot -> O(log N)
 int peakElement(int arr[], int low, int high, int lowerBound, int upperBound)
@@ -31,4 +36,21 @@ int peakElement(int arr[], int low, int high, int lowerBound, int upperBound)
     }
      
     return -1;
+}
+
+
+int main(){
+    int n;
+    cin>>n;
+
+    int arr[n];
+    for(int i=0;i<n;i++){
+        cin>>arr[i];
+    }
+    // int low=0;
+    // int high=n-1;
+    // int lowerbound=
+    // int ans=peakElement(n,arr,low,high,)
+
+
 }

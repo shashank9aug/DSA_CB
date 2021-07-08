@@ -1,0 +1,20 @@
+Basically problem is combination of two problems:
+    search an element in infinite sorted array and find first occurrence of given element
+
+    what we can do :
+        we have to apply search an element in infinite sorted array
+        while(key>arr[mid]){
+            res=mid;
+            end=end*2;
+        }
+
+        when end will reach its position apply binary search
+        change this condition : 
+        if(arr[mid]==key){
+            res=mid;
+            end=mid-1;
+        }
+
+        other condition will be same
+        
+

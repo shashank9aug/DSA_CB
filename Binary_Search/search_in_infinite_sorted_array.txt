@@ -1,0 +1,25 @@
+
+    n=7
+    arr[7]={1,2,3,4,5,6,7,8,9,......infinite}
+    size=infinite
+    key=7
+
+    Difference bteween Normal binary search and search in infinite sorted array
+    -> size of infinite sorted array is not defined so we can not apply normal binary search.
+
+    -Fix this size issue : 
+        we will take start at 0 and end at 1 
+        then
+            we will increase increase end=end*2
+                  while(key>arr[end]){
+                      start=end;
+                      end=end*2;
+                  }
+
+                  after that end will reach it's position and start as well
+
+                  apply binary search on that part of infinite sorted array
+                  BS(arr,start,end);          
+
+                  
+

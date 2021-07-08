@@ -1,0 +1,19 @@
+
+for normal binary search condition : 
+            -> array must be sorted
+                so,
+                    we can easily compare elements of array with mid and left and right 
+                    and ignore any of the side 
+
+    what if array is unsorted and we want to apply binary search ??
+        -> for that we have to decide some criteria so that we can decide where to move
+            like if arr[mid]==key or arr[mid]<key or arr[mid]>key 
+                for that we have to devlop some criteria to decide.
+
+                        for that we will solve problem called "Peak element"
+
+                        How we will got idea that we have to apply BS on any unsorted array??
+                         -> their must be given any condition 
+                                like Peak element : element which is greater from both of its neighbour
+
+                BS on ans => pro 

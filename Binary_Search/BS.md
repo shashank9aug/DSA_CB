@@ -13,5 +13,10 @@
     4 : Last Occurrence.
     5 : Count of an element in sorted array.
     6 : No of times a sorted array is rotated.
-    7 : Find an element in an sorted rotated array. 
+    7 : Find an element in an sorted rotated array.
+    8 : floor in sorted array.
+    9 : Ceil  in sorted array.
+    10: next alphabet 
+    11: search in nearly sorted array.
+    12:       
 ```

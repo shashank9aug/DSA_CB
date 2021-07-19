@@ -1,0 +1,13 @@
+Why Quicksort is preferred for. Arrays and Merge Sort for LinkedLists ?
+
+-> In case of Arrays : 
+    QuickSort - no extra space
+    MergeSort - O(N) extra space
+
+    Both have same time complexity = O(NlogN)
+  == QuickSort will win the race here
+-> In case of LL : 
+    QuickSort : 
+    with linked lists merge sort doesn't have the memory disadvantage, and outperforms 
+    quick sort (linked lists are easy to divide, no additional memory needed to manipulate 
+    it).

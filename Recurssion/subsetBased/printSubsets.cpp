@@ -9,14 +9,17 @@
 
 
 #include<iostream>
+#include<algorithm>
+#include<vector>
 #include<string>
 #include<cstring>
 using namespace std;
 
-void printSubsets(string str,string op){
+void printSubsets(string str,string op,vector<string>&ans){
     //Base case : 
     if(str.length()==0){
-        cout<<op<<endl;
+        // cout<<op<<",";
+        ans.push_back(op);
         return; 
     }
 
@@ -29,8 +32,8 @@ void printSubsets(string str,string op){
     //erase function takes input as an iterator : 
     str.erase(str.begin()+0);
     
-    printSubsets(str,op1);
-    printSubsets(str,op2);
+    printSubsets(str,op1,ans);
+    printSubsets(str,op2,ans);
 
     return;
 }
@@ -42,8 +45,11 @@ int main(){
     cin>>str;
 
     string op="";
-
-    printSubsets(str,op);
-
+    vector<string>ans;
+    printSubsets(str,op,ans);
+    // sort(ans.begin(),ans.end());
+    for(int i=0;i<ans.size();i++){
+        cout<<ans[i]<<",";
+    }
     return 0;
 }

@@ -72,8 +72,8 @@ void reverseLL(node*&head){
 
 
 //Recurssive Method : 
-void reverseLLRecursive(node*&head){
-    
+void reverseLLRecursive(node*head){
+
 }
 
 int main(){
